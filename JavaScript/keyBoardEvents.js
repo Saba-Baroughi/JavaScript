@@ -1,29 +1,26 @@
-let usernameMessage = document.querySelector(".username-validation");
-let passwordMessage = document.querySelector(".password-validation");
+let usernameMessage = document.querySelector(".username-Validation");
+let passwordMessage = document.querySelector(".password-Validation");
 
 let usernameInput = document.querySelector(".username");
 let passwordInput = document.querySelector(".password");
 
 function usernameValidation() {
-  // alert('username')
   if (usernameInput.value.length < 12) {
     usernameMessage.style.color = "red";
-    usernameMessage.innerHTML = "Must Contain 12 Character (Min)";
     usernameMessage.style.display = "block";
+    usernameMessage.innerHTML = "It should be 12";
   } else {
     usernameMessage.style.color = "green";
-    usernameMessage.innerHTML = "Correct Username Value";
+    usernameMessage.innerHTML = "Correct value";
   }
 }
-
 function passwordValidation() {
-  // alert('Password')
   if (passwordInput.value.length < 8) {
     passwordMessage.style.color = "red";
-    passwordMessage.innerHTML = "Must Contain 8 Character (Min)";
     passwordMessage.style.display = "block";
+    passwordMessage.innerHTML = "It should be 8";
   } else {
     passwordMessage.style.color = "green";
-    passwordMessage.innerHTML = "Correct Password Value";
+    passwordMessage.innerHTML = "Correct value";
   }
 }
