@@ -8,6 +8,7 @@ let countriesData = {
 
 countrySelectBox.addEventListener("change", function () {
   if (countrySelectBox.value === "please Select") {
+    //So it does not give an undefined when select it
     citySelect.innerHTML = "";
     citySelect.innerHTML += "<option> Select City </option>"; //difference
   } else {
