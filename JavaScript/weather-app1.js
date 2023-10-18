@@ -42,7 +42,7 @@ let searchBar = $.querySelector(".search-bar");
 
 searchBtn.addEventListener("click", function () {
   let searchBarValue = searchBar.value; // tabriz//    instead of innerHTML==> value
-  let mainCityDatas = citiesData[searchBarValue];
+  let mainCityDatas = citiesData[searchBarValue]; // it is for object in Array yyoun need to use find
 
   console.log(mainCityDatas);
   if (mainCityDatas) {
