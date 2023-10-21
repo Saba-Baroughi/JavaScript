@@ -1,9 +1,4 @@
-let loginForm = document.getElementById("loginForm");
-let usernameInput = document.getElementById("username");
-loginForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-  console.log(event);
-});
-usernameInput.addEventListener("keydown", function (event) {
-  console.log(event);
-});
+let listItems = document.getElementsByClassName("list-item");
+console.log(listItems[2].nextSibling.nextSibling);
+let list = document.getElementById("list");
+console.log(list.hasChildNodes());
