@@ -1,4 +1,6 @@
-let listItems = document.getElementsByClassName("list-item");
-console.log(listItems[2].nextSibling.nextSibling);
-let list = document.getElementById("list");
-console.log(list.hasChildNodes());
+let listitems = document.querySelectorAll(".list-item");
+listitems.forEach(function (li) {
+  li.addEventListener("click", function (event) {
+    console.log(event.target.parentElement);
+  });
+});
