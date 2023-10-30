@@ -1,5 +1,12 @@
-divEle = document.querySelector(".loader");
+divElem = document.getElementById("box");
+btnElem = document.getElementById("btn");
 
-window.addEventListener("load", function () {
-  divEle.classList.add("hidden");
-});
+function mouseMoveHandler() {
+  console.log("Mouse Move");
+}
+function removeHandler() {
+  divElem.removeEventListener("mousemove", mouseMoveHandler);
+}
+
+divElem.addEventListener("mousemove", mouseMoveHandler);
+btnElem.addEventListener("click", removeHandler);
