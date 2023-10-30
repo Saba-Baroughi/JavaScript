@@ -1,12 +1,10 @@
-divElem = document.getElementById("box");
-btnElem = document.getElementById("btn");
-
-function mouseMoveHandler() {
-  console.log("Mouse Move");
+let inputElem = document.getElementById("inputtest");
+let textareaElem = document.getElementById("test2");
+function inputSelect() {
+  console.log("selected");
 }
-function removeHandler() {
-  divElem.removeEventListener("mousemove", mouseMoveHandler);
+function textareaSelect() {
+  console.log("selected");
 }
-
-divElem.addEventListener("mousemove", mouseMoveHandler);
-btnElem.addEventListener("click", removeHandler);
+inputElem.addEventListener("select", inputSelect);
+textareaElem.addEventListener("select", textareaSelect);
