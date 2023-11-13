@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/Game.css" />
+    <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
+      <div class="game">
+        <div id="userChoice" class="choice">
+          <h2>Your Choice</h2>
+          <button onclick="userChoice('rock')">Rock</button>
+          <button onclick="userChoice('paper')">Paper</button>
+          <button onclick="userChoice('scissors')">Scissors</button>
+          <button onclick="userChoice('lizard')">Lizard</button>
+          <button onclick="userChoice('spock')">Spock</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div id="computerChoice" class="choice">
+          <h2>Computer's Choice</h2>
+          <p id="computerText">Waiting for your choice...</p>
+        </div>
+      </div>
+    </div>
+    <script src="../Game.js"></script>
+  </body>
+</html>
