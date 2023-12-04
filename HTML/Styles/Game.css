@@ -1,6 +1,6 @@
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
+  background-color: #353f5b;
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: #fff;
 }
 
 .game {
@@ -42,12 +42,12 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0a590e;
 }
 
 .result {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
-  color: #333;
+  color: violet;
   margin-top: 10px;
 }

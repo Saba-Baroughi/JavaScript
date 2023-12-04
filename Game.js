@@ -24,9 +24,8 @@ function determineWinner(user, computer) {
 
 function userChoice(user) {
   const computer = computerChoice();
-  document.getElementById(
-    "computerText"
-  ).innerHTML = `Computer chose: ${computer}`;
+  document.getElementById("computerText").innerHTML =
+    "Computer chose: " + computer;
   const result = determineWinner(user, computer);
   document.getElementById("result").innerHTML = result;
 }
