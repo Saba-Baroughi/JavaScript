@@ -4,7 +4,7 @@ function contextHandler(event) {
   if (contextMenu.style.display === "none") {
     contextMenu.style.display = "block";
     contextMenu.style.top = event.pageY + "px";
-    contextMenu.style.left = event.pageX = "px";
+    contextMenu.style.left = event.pageX + "px";
   } else {
     // when it appeae even if I right clicked another
     // places still open with different pageX and pageY
